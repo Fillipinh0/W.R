@@ -78,20 +78,20 @@ section.inicio {
 
 .text-inicio h1 {
     width: 70%;
-    font-size: 4.7rem;
+    font-size: 3.8rem;
     margin-bottom: 10px;
     color: var(--white);
 }
 
 .text-inicio p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: var(--white); 
 }
 /*Butãozinho dentro a baixo do texto*/
 .text-inicio > a.button_entre_em_contato {
     margin-top: 50px; 
-    font-size: 1.7rem;
+    font-size: 1.55rem;
     padding: 20px 40px;
     background-color: var(--secondary_color);
     display: inline-block;
@@ -118,7 +118,7 @@ section.informacoes {
 }
 section.informacoes > h2 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.3rem;
     padding: 50px 0;
 }
 section.informacoes > .container_infomacoes_e_imagem{
@@ -135,7 +135,7 @@ section.informacoes > .container_infomacoes_e_imagem{
     
 }
 div.text_info > h3 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 20px;
     color: var(--color-title);
 }
@@ -150,7 +150,7 @@ div.text_info > a.saiba_mais {
     border-radius: 15px;
     padding: 20px 30px;
     width: 198px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color: var(--primary_color);
     color: var(--white);
     transition: all 0.3s ease;
@@ -178,13 +178,14 @@ section.propaganda_dos_servicos {
 }
 
 section.propaganda_dos_servicos  h2{
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: left;
     padding: 50px;
     width: 500px;
 }
 section.propaganda_dos_servicos h2 > a {
     display: inline-block;
+    font-size: 2.5rem;
     padding: 10px 20px;
     margin-top: 15px;
     background-color: var(--primary_color); 
@@ -192,6 +193,9 @@ section.propaganda_dos_servicos h2 > a {
     border-radius: 3px;
     box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.534);
     transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+section.propaganda_dos_servicos h2 > a > span {
+    margin-left: 2px;
 }
 
 section.propaganda_dos_servicos  h2 > a:hover{

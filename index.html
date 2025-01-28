@@ -8,22 +8,41 @@
 </head>
 <body>
     <header>
-        <img src="assets/W.R_SoLogo.png" alt="W.R(Logo da empresa)" class="logo">
-        <nav>
+        <div class="navbar">
+            <img src="assets/W.R_SoLogo.png" alt="W.R(Logo da empresa)" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            
+            </nav>
+            <a href="https://wa.me/553191578531/?" target="_blank" class="whatsapp">
+                <div class="whatsapp">
+                    (31) 9157-8531 <img src="assets/whatsapp.svg" alt="whatsapp Image">
+                </div>
+            </a>
+            
+        </div>
+        <div class="navbar_mobile">
+            <img src="assets/W.R_SoLogo.png" alt="W.R(Logo da empresa)" class="logo">
+            <img src="assets/menu.svg" alt="icone de menu que sao 3 _" class="icone_menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
-        </nav>
-
-        <a href="https://wa.me/553191578531/?" target="_blank" class="whatsapp">
-            <div class="whatsapp">
-                (31) 9157-8531 <img src="assets/whatsapp.svg" alt="whatsapp Image">
-            </div>
-        </a>
+            <a href="https://wa.me/553191578531/?" target="_blank" class="whatsapp">
+                <div class="whatsapp">
+                    (31) 9157-8531 <img src="assets/whatsapp.svg" alt="whatsapp Image">
+                </div>
+            </a>
+        </div>
     </header>
+    
     <main>
         <!-- ---------------------------- -->
         <section class="inicio">
@@ -70,7 +89,7 @@
         <section class="propaganda_dos_servicos">
             <div class="container_limitador"> <!--Ele existe para a escrita nao ser expremida por outro elemento-->
                 <h2>Os noços serviços vão te surprender em <br>
-                    <a href="">Serviços</a></h2>
+                    <a href="">Ser<span class="espaco">v</span>iços</a></h2>
             </div>
             <article class="container_servicos-imgs">
                 <a href="" class="instalacoes_eletricas">
