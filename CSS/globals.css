@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    /*font-family: var(--font-family); <-- lembra de selecioanar uam fonte depois pf*/
+  }
+body
+{
+  background-color: #f4f4f4;
+}
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }

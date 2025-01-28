@@ -1,0 +1,91 @@
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+
+img.logo {
+    width: 11rem;
+}
+header {
+    background-color: var(--white);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.116);
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header > nav  ul {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    gap: 3rem;
+    list-style: none;
+    
+}
+header > nav> ul> li> a {
+    font-size: 1.6rem;
+    color: var(--primary_color);
+}
+
+
+
+a.whatsapp {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--whatsapp_color); 
+    padding: 15px 30px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.116);
+}
+a.whatsapp:hover {
+    filter: opacity(80%);
+    transition: filter 0.2s ease-in-out
+}
+div.whatsapp{
+    color: white;
+    font-size: 1.3rem;
+}
+
+/*  Efeito de hover no menu */
+ul li {
+    position: relative;
+}
+ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--secondary_color);
+    transition: width 0.3s ease;
+}
+ul li:hover::after {
+    width: 100%;
+} 
+
+
+ /*  Leve transação o mais glin
+
+ul li {
+    transition: all 0.3s ease;
+}
+ul li:hover {
+    color: #007bff;
+    transform: scale(1.1); 
+}
+    */
+
+    
