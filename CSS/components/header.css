@@ -2,7 +2,7 @@
 header {
     background-color: var(--white);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.116);
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,11 +10,14 @@ header {
     z-index: 1000;
 }
 
-header .navbar{
+header .navbar_desktop{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-items: center;
+}
+header .navbar_desktop img.icone_menu_desktop{
+    display: none;
 }
 
 img.logo {
@@ -89,23 +92,118 @@ ul li:hover {
 /*-------------------------------------*/
 /*Responsividade/ menu mobal*/
 
-.navbar_mobile {
+.navbar_mobile , .navbar_mobile ul.menu_mobile {
     display: none;
 }
-@media (max-width: 768px) {
-    header > nav > ul {
+
+
+@media (max-width: 1050px) {
+    .navbar_desktop nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar_desktop nav > ul.menu_desktop {
+        display: none;
+        gap: 0;
+    } 
+
+    header .navbar_desktop img.icone_menu_desktop{
+        display: flex;
+        width: 3rem;
+    }
+    .navbar_desktop nav > ul.menu_desktop.active {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        text-align: center;
+        width: 15rem;
+        box-shadow: 0 0 0.8px 1.3px rgba(0, 0, 0, 0.185);
+        margin: 1rem 0 1rem 0;
+    } 
+    header .navbar_desktop nav ul.menu_desktop > li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+        transition: all 0.3s ease;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .navbar_desktop nav ul.menu_desktop  li  a {
+        font-size: 1.3rem;
+
+    }
+    .navbar_desktop ul.menu_desktop > li:hover, .navbar_desktop ul.menu_desktop > li:active {
+        background-color: var(--primary_color);
+        color: var(--white);
+        
+    }
+    .navbar_desktop ul.menu_desktop  li a:hover , .navbar ul.menu_desktop  li a:active{
+        color: var(--white);
+    }
+
+    ul li::after {
         display: none;
     }
+}
+@media (max-width: 768px) {
+    
+    div.navbar_desktop {
+        display: none; /*Pra tirar o menu padrado de vista*/
+    }
+    header .navbar img.icone_menu_mobile{
+        display: flex;
+        width: 3rem;
+    }
+
     .navbar_mobile {
         display: flex;
-        justify-items: column;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
         font-size: 2rem;
         color: var(--primary_color);
     }
-    .navbar_mobile img {
-        width: 2.5rem;
+    .navbar_mobile img.logo {
+        width: 9rem;
+        margin-bottom: 30px;
+    }
+    .navbar_mobile img.icone_menu_mobile {
+        width: 3rem;
+        
+    }
+    header {
+        background-color: var(--white);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.116);
+        padding: 1.5rem 0;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+    }
+    .navbar_mobile ul.menu_mobile.active {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 90%;
+        box-shadow: 0 0 0.8px 1.3px rgba(0, 0, 0, 0.185);
+        margin: 1rem 0 1rem 0;
+    }
+    .navbar_mobile ul.menu_mobile > li {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+        padding-left: 1rem;
+        font-size: 1.7rem;
+        transition: all 0.3s ease;
+    }
+    .navbar_mobile ul.menu_mobile > li:hover, .navbar_mobile ul.menu_mobile > li:active {
+        background-color: var(--primary_color);
+        color: var(--white);
+        
+    }
+    ul li::after {
+        display: none;
     }
 }
+
 
 
 
