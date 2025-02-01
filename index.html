@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W.R Telecom & automação</title>
+
+    <!--Swiper link-->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
     <link rel="stylesheet" href="/CSS/extends.css">
 </head>
 <body>
@@ -95,26 +103,47 @@
             <div class="container_limitador"> <!--Ele existe para a escrita nao ser expremida por outro elemento-->
                 <h2>Os nossos serviços vão te surprender em</h2>
             </div>
-            <article class="container_servicos-imgs">
-                <a href="" class="instalacoes_eletricas">
-                    <h3>Instalações Elétricas</h3>
-                </a>
 
-                <a href="" class="seguranca_eletronica">
-                    <h3>Segurança Eletrônica</h3>
+        <!--Slider main container-->
+            <article class="container_servicos-imgs swiper">
+                <!--Cards-->
+                <div class="swiper-wrapper"> <!-- Esse é o contener dos cards-->
 
-                </a>
+                    <div class="swiper-slide">
+                        <a href="" class="instalacoes_eletricas">
+                            <h3>Instalações Elétricas</h3>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="seguranca_eletronica">
+                            <h3>Segurança Eletrônica</h3>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="projetos_fotovoltaicos">
+                            <h3>Projetos Fotovoltaicos</h3>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="automacao_residencial">
+                            <h3>Automação Residencial</h3>
+                        </a>
+                    </div>
 
-                <a href="" class="projetos_fotovoltaicos">
-                    <h3>Projetos Fotovoltaicos</h3>
-                    
-                </a>
+                </div>
+                <!-- If we need pagination -->
+                
 
-                <a href="" class="automacao_residencial">
-                    <h3>Automação Residencial</h3>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
-                </a>
+                <!-- If we need scrollbar -->
+                
+
             </article>
+
+
         </section>
 
         <!-- ---------------------------- -->
@@ -170,8 +199,11 @@
         </section>
 
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <script src="Js/main.js"></script>
+        <!--Swiper Js-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="Js/carro.js"></script>
     </main>
 </body>
 </html>

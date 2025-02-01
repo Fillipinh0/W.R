@@ -18,7 +18,7 @@ main {
  
 @media (max-width: 1650px) { 
     main {
-        width: 106.6%;
+        width: 105%;
         margin: -20px;
     }
 }
@@ -205,14 +205,19 @@ div.text_info > a.saiba_mais:hover {
 
 /*Section 3 onde fica os servicos*/
 section.propaganda_dos_servicos {
-    margin-top: 4rem;
+    margin-top: 1em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    padding-bottom: 85px;
+    margin-bottom: 1rem;
     overflow: hidden;
 
+}
+@media screen and (max-width: 1000px) {
+    section.propaganda_dos_servicos {
+        flex-direction: column;
+    }
 }
 
 section.propaganda_dos_servicos  h2{
@@ -221,6 +226,14 @@ section.propaganda_dos_servicos  h2{
     padding: 50px;
     width: 530px;
 }
+@media screen and (max-width: 1000px) {
+    section.propaganda_dos_servicos  h2{
+        text-align: center;
+        margin-right: 0.2rem;
+    }
+}
+/*    Foi removido pois ja tinha muito botoes na pagina   
+
 section.propaganda_dos_servicos h2 > a {
     display: inline-block;
     font-size: 2.5rem;
@@ -240,16 +253,41 @@ section.propaganda_dos_servicos  h2 > a:hover{
     background-color: var(--secondary_color); 
     transform: scale(1.05);
 }
-
+*/
 /*Seção dos link general para a imagens dos serviços OBS: para de clicar nele achando que é o link da imagem Fillipe*/
-section.propaganda_dos_servicos > article {
+section.propaganda_dos_servicos  article {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    padding: 50px;
+    justify-items: center;
+    
     /*flex-wrap: wrap;<--------------------------------------- Ta aqui Fillipe! Para de perde de vista */
 
 }
-section.propaganda_dos_servicos > article > a {
+
+.swiper-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    justify-items: center;
+    
+}
+@media screen and (max-width: 1230px) {
+    .swiper-wrapper {
+        width: 13rem;
+        
+    }
+    
+}
+
+.swiper-slide {
+    height: 300px;
+    text-align: center;
+
+
+}
+section.propaganda_dos_servicos  article  a {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -267,24 +305,27 @@ section.propaganda_dos_servicos > article > a {
     
 
 }
+
+
+
 /*Escrementação das imagens no back ground*/
-section.propaganda_dos_servicos > article > a.instalacoes_eletricas {
+section.propaganda_dos_servicos > article  a.instalacoes_eletricas {
     background-image: url('/assets/eletrica.png');
 }
 
-section.propaganda_dos_servicos > article > a.seguranca_eletronica {
+section.propaganda_dos_servicos > article  a.seguranca_eletronica {
     background-image: url('/assets/seguranca_eletronica.png');
 }
 
-section.propaganda_dos_servicos > article > a.projetos_fotovoltaicos {
+section.propaganda_dos_servicos > article  a.projetos_fotovoltaicos {
     background-image: url('/assets/energia_fotovoltaica.png');
 }
 
-section.propaganda_dos_servicos > article > a.automacao_residencial {
+section.propaganda_dos_servicos > article  a.automacao_residencial {
     background-image: url('/assets/automasao_residencial.png');
 }
 
-section.propaganda_dos_servicos > article > a:hover{
+section.propaganda_dos_servicos > article  a:hover{
     transform: scale(1.1);
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
     color: var(--secondary_color);

@@ -1,26 +1,29 @@
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
+const swiper = new Swiper('.swiper', {
+
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+    // Responsive breakpoints
     breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+
+        1234: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            },
+        1236: {
+        slidesPerView: 2,
+        spaceBetween: 20
         },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+        
+        1480: {
+        slidesPerView: 3,
+        spaceBetween: 18
         },
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-        },
-    },
-});
+        
+        1700: {
+        slidesPerView: 4,
+        spaceBetween: 20
+        }
+    }
+  });

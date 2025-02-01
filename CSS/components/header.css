@@ -127,6 +127,7 @@ ul li:hover {
         transition: all 0.3s ease;
         width: 100%;
         padding: 0.5rem;
+        
     }
     .navbar_desktop nav ul.menu_desktop  li  a {
         font-size: 1.3rem;
@@ -134,10 +135,8 @@ ul li:hover {
     }
     .navbar_desktop ul.menu_desktop > li:hover, .navbar_desktop ul.menu_desktop > li:active {
         background-color: var(--primary_color);
-        color: var(--white);
-        
     }
-    .navbar_desktop ul.menu_desktop  li a:hover , .navbar ul.menu_desktop  li a:active{
+    .navbar_desktop ul.menu_desktop  li:hover a , .navbar ul.menu_desktop  li a:active{
         color: var(--white);
     }
 
