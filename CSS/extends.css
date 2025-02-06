@@ -1,5 +1,7 @@
 @import './variables.css';
 @import './globals.css';
 
-@import 'components/header.css';
-@import 'components/main.css';
+@import 'components/partesGeraisCSS/header.css';
+
+@import 'components/servicosCSS/main.css';
+@import 'components/indexCSS/main.css';

@@ -1,27 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-main {
-    width: 85%;
-    padding: 0 20px;
-    margin: 0 auto;
-    
-}
-@media (max-width: 1780px) { 
-    main {
-        width: 95%;
-    }
-}
- 
-@media (max-width: 1650px) { 
-    main {
-        width: 105%;
-        margin: -20px;
-    }
-}
 /*------------------------------------------------------------------------*/
 /*Primeira seção do main*/
 section.inicio {
@@ -356,13 +333,13 @@ section.propaganda_dos_servicos > article  a:hover{
   .services-container {
     display: flex;
     flex-wrap: wrap; 
-    gap: 20px; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os itens */
+    gap: 20px; 
+    justify-content: center; 
   }
   
   .services-category {
-    flex: 1 1 calc(25% - 20px); /* Largura base de 25%, ajusta automaticamente */
-    min-width: 250px; /* Largura mínima para não ficar muito estreito */
+    flex: 1 1 calc(25% - 20px); 
+    min-width: 250px; 
     background-color: var(--white);
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -372,7 +349,7 @@ section.propaganda_dos_servicos > article  a:hover{
   }
   
   .services-category:hover {
-    transform: scale(1.05); /* Pequeno zoom ao passar o mouse */
+    transform: scale(1.05); 
   }
   
   .category-title {
@@ -393,3 +370,24 @@ section.propaganda_dos_servicos > article  a:hover{
   .sub-title {
     margin-bottom: 10px;
   }
+
+  .services-list li {
+    position: relative; /* Necessário para posicionar a linha */
+    padding-bottom: 5px; /* Espaço para a linha */
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.services-list li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary_color); /* Cor da linha */
+    transition: width 0.3s ease; /* Transição suave */
+}
+
+.services-list li:hover::after {
+    width: 100%; /* Expande a linha ao passar o mouse */
+}

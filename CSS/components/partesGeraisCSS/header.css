@@ -60,10 +60,10 @@ div.whatsapp{
 }
 
 /*  Efeito de hover no menu */
-ul li {
+header ul li {
     position: relative;
 }
-ul li::after {
+header ul li::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -73,7 +73,7 @@ ul li::after {
     background-color: var(--secondary_color);
     transition: width 0.3s ease;
 }
-ul li:hover::after {
+header ul li:hover::after {
     width: 100%;
 }
 

@@ -1,0 +1,54 @@
+main.container_servicos
+{
+    margin-top: 120px;
+    background-color: white;
+    padding: 2rem;
+}
+h1.tituloPrincipal_sevicos
+{
+    text-align: center;
+    margin-right: 100px;
+}
+main.container_servicos .section_servicos
+{
+    margin: 30px 0px 25px 20px;
+}
+main.container_servicos h2.titulo_secao
+{
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    text-align: left;
+    color: var(--color-title);
+    padding-top: 5px; /* Espaço para a linha verde */
+    
+}
+main.container_servicos h2.titulo_secao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px; /* Largura da linha verde */
+    height: 4.5px; /* Altura da linha verde */
+    background-color: var(--primary_color); /* Cor da linha verde */
+}
+
+main.container_servicos .article_servicos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    
+}
+
+main.container_servicos .article_servicos> div {
+    width: 50%;
+    
+}
+
+main.container_servicos .article_servicos.invertido {
+    flex-direction: row-reverse; /* Inverte a direção dos itens */
+}
+
+main.container_servicos .article_servicos.invertido img {
+    margin-left: 20px; /* Espaçamento entre a imagem e o texto */
+    margin-right: 0; /* Remove o espaçamento à direita */
+}
