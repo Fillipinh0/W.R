@@ -1,5 +1,18 @@
 
 /*------------------------------------------------------------------------*/
+main.main_index {
+    padding: 0 30px;
+}
+
+@media (max-width: 1650px) { 
+    main.main_index {
+        width: 103%;
+        margin: -20px;
+    }
+}
+
+
+
 /*Primeira seção do main*/
 section.inicio {
     display: inline-block;
@@ -175,8 +188,12 @@ div.text_info > a.saiba_mais:hover {
     filter: opacity(0.8);
 }
 
-.container_infomacoes_e_imagem > img {
-    background-color: var(--primary_color);
+.container_infomacoes_e_imagem .container_imagem_logo {
+    background-image: url(/assets/fundo_material_eletrica.svg);
+}
+
+.container_infomacoes_e_imagem  img.imagem_logo_ {
+    border: 1px solid black;
     width: 30rem;
 }
 
@@ -188,7 +205,6 @@ section.propaganda_dos_servicos {
     align-items: center;
     padding: 20px;
     margin-bottom: 1rem;
-    overflow: hidden;
 
 }
 @media screen and (max-width: 1000px) {
@@ -248,7 +264,7 @@ section.propaganda_dos_servicos  article {
     justify-content: space-between;
     padding: 50px;
     justify-items: center;
-    
+
 }
 @media screen and (max-width: 1230px) {
     .swiper-wrapper {
@@ -261,7 +277,6 @@ section.propaganda_dos_servicos  article {
 .swiper-slide {
     height: 300px;
     text-align: center;
-
 
 }
 section.propaganda_dos_servicos  article  a {
@@ -317,10 +332,11 @@ section.propaganda_dos_servicos > article  a:hover{
 .services-summary {
     font-family: Arial, sans-serif;
     margin-left: 0px;
-    padding: 20px;
+    padding: 30px 20px 45px 20px;
     width: 100%;
     background-color: var(--white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
   }
   
   .section-title {
@@ -372,9 +388,9 @@ section.propaganda_dos_servicos > article  a:hover{
   }
 
   .services-list li {
-    position: relative; /* Necessário para posicionar a linha */
-    padding-bottom: 5px; /* Espaço para a linha */
-    transition: all 0.3s ease; /* Transição suave */
+    position: relative; 
+    padding-bottom: 5px; 
+    transition: all 0.3s ease; 
 }
 
 .services-list li::after {
@@ -384,10 +400,10 @@ section.propaganda_dos_servicos > article  a:hover{
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--primary_color); /* Cor da linha */
-    transition: width 0.3s ease; /* Transição suave */
+    background-color: var(--primary_color); 
+    transition: width 0.3s ease; 
 }
 
 .services-list li:hover::after {
-    width: 100%; /* Expande a linha ao passar o mouse */
+    width: 100%; 
 }

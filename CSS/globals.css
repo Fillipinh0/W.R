@@ -23,20 +23,17 @@ ul {
   }
   
   main {
-      width: 85%;
-      padding: 0 20px;
-      margin: 0 auto;
-      
-  }
-  @media (max-width: 1780px) { 
-      main {
-          width: 95%;
-      }
-  }
-   
-  @media (max-width: 1650px) { 
-      main {
-          width: 103%;
-          margin: -20px;
-      }
-  }
+    width: 85%;
+    margin: 0 auto;
+}
+@media (max-width: 1780px) { 
+    main {
+        width: 95%;
+    }
+}
+ 
+@media (max-width: 1650px) { 
+    main {
+        width: 100%;
+    }
+}

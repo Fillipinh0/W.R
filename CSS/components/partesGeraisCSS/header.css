@@ -34,7 +34,7 @@ header  nav  ul {
     list-style: none;
     
 }
-header  nav ul li a {
+header  nav ul a {
     font-size: 1.6rem;
     color: var(--primary_color);
 }
@@ -60,10 +60,10 @@ div.whatsapp{
 }
 
 /*  Efeito de hover no menu */
-header ul li {
+header ul a {
     position: relative;
 }
-header ul li::after {
+header ul a::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -73,7 +73,10 @@ header ul li::after {
     background-color: var(--secondary_color);
     transition: width 0.3s ease;
 }
-header ul li:hover::after {
+header ul a:hover::after {
+    width: 100%;
+}
+header ul a.aberta:after {
     width: 100%;
 }
 
@@ -104,7 +107,7 @@ ul li:hover {
         align-items: center;
         justify-content: center;
     }
-    .navbar_desktop nav > ul.menu_desktop {
+    .navbar_desktop nav  ul.menu_desktop {
         display: none;
         gap: 0;
     } 
@@ -122,25 +125,27 @@ ul li:hover {
         box-shadow: 0 0 0.8px 1.3px rgba(0, 0, 0, 0.185);
         margin: 1rem 0 1rem 0;
     } 
-    header .navbar_desktop nav ul.menu_desktop > li {
+    header .navbar_desktop nav ul.menu_desktop > a {
         border-bottom: 1px solid rgba(0, 0, 0, 0.116);
         transition: all 0.3s ease;
         width: 100%;
         padding: 0.5rem;
         
     }
-    .navbar_desktop nav ul.menu_desktop  li  a {
+    .navbar_desktop nav ul.menu_desktop a {
         font-size: 1.3rem;
 
     }
-    .navbar_desktop ul.menu_desktop > li:hover, .navbar_desktop ul.menu_desktop > li:active {
+    .navbar_desktop ul.menu_desktop  a:hover, .navbar_desktop ul.menu_desktop  a:active {
         background-color: var(--primary_color);
+        color: var(--white);
     }
-    .navbar_desktop ul.menu_desktop  li:hover a , .navbar ul.menu_desktop  li a:active{
+    .navbar_desktop ul.menu_desktop  a.aberta {
+        background-color: var(--primary_color);
         color: var(--white);
     }
 
-    ul li::after {
+    ul a::after {
         display: none;
     }
 }
@@ -186,19 +191,24 @@ ul li:hover {
         box-shadow: 0 0 0.8px 1.3px rgba(0, 0, 0, 0.185);
         margin: 1rem 0 1rem 0;
     }
-    .navbar_mobile ul.menu_mobile > li {
+    .navbar_mobile ul.menu_mobile  a {
         padding: 1rem 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.116);
         padding-left: 1rem;
         font-size: 1.7rem;
         transition: all 0.3s ease;
     }
-    .navbar_mobile ul.menu_mobile > li:hover, .navbar_mobile ul.menu_mobile > li:active {
+    .navbar_mobile ul.menu_mobile  a:hover, .navbar_mobile ul.menu_mobile  a:active {
         background-color: var(--primary_color);
         color: var(--white);
         
     }
-    ul li::after {
+    .navbar_mobile ul.menu_mobile  a.aberta {
+        background-color: var(--primary_color);
+        color: var(--white);
+    }
+    
+    ul a::after {
         display: none;
     }
 }

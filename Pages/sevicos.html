@@ -15,10 +15,10 @@
             <nav>
                 <img src="/assets/menu.svg" alt="icone de menu que sao 3 _" class="icone_menu_desktop icone_menu" >
                 <ul class="menu_desktop">
-                    <li><a href="/index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="sevicos.html">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <a href="/index.html">Início</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="sevicos.html" class="aberta">Serviços</a>
+                    <a href="contato.html">Contato</a>
                 </ul>
             
             </nav>
@@ -35,10 +35,10 @@
             <img src="/assets/W.R_SoLogo.png" alt="W.R(Logo da empresa)" class="logo">
             <img src="/assets/menu.svg" alt="icone de menu que sao 3 _" class="icone_menu_mobile">
             <ul class="menu_mobile">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html" class="aberta">Serviços</a>
+                <a href="contato.html">Contato</a>
             </ul>
             <a href="https://wa.me/553191578531/?" target="_blank" class="whatsapp">
                 <div class="whatsapp">
@@ -51,32 +51,35 @@
 
 
     <main class="container_servicos"> 
-        <h1 class="tituloPrincipal_sevicos">Serviços</h1>
+        
         <section class="section_servicos " id="instalacoes_eletricas">
             
-                <h2 class="titulo_secao">Instalações Elétricas</h2>
-                <p class="descricao_servico">Oferecemos uma ampla gama de serviços em instalações elétricas, garantindo segurança e eficiência.</p>
-            
+                <div class="container_titulo">
+                    <h2 class="titulo_secao">Instalações Elétricas</h2>
+                    <p class="descricao_servico">Oferecemos uma ampla gama de serviços em instalações elétricas, garantindo segurança e eficiência.</p>
+                </div>
+
                 <article class="article_servicos" id="cameras_dvr">
                     <div>
                         <h3>Instalações Elétricas em Geral</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <p>Realizamos instalações elétricas residenciais, comerciais e industriais com segurança e eficiência. Nossos serviços seguem todas as normas técnicas, garantindo um sistema elétrico seguro e funcional.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/eletrica_geral.jpg" alt="" >
                 </article>
                 
                 <article class="article_servicos invertido" id="cameras_dvr">
                     <div>
-                        <h3>Projetos Elétricos e Fotovoltaicos</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <h3>Projetos Fotovoltaicos</h3>
+                        <p>
+                            Especialistas em energia solar, oferecemos projetos personalizados de sistemas fotovoltaicos para reduzir seus custos de energia e contribuir com a sustentabilidade.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/projetosf_otovoltaicos.jpg" alt="">
                 </article>
                 
                 <article class="article_servicos" id="cameras_dvr">
                     <div>
                         <h3>Manutenção Preventiva</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <p>Evite falhas elétricas e prolongue a vida útil de seus equipamentos com nossa manutenção preventiva. Realizamos inspeções, testes e ajustes para garantir um sistema seguro e eficiente.</p>
                     </div>
                     <img src="/assets/eletrica.png" alt="">
                 </article>
@@ -84,15 +87,15 @@
                 <article class="article_servicos invertido" id="cameras_dvr">
                     <div>
                         <h3>Comandos Elétricos</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <p>Projetamos e instalamos comandos elétricos para automação industrial, melhorando a produtividade e otimizando processos com tecnologia de ponta.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/comandos_eletricos.jpg" alt="">
                 </article>
 
                 <article class="article_servicos" id="cameras_dvr">
                     <div>
                         <h3>Sistema de Para-Raio (SPDA)</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <p>Instalação e manutenção de sistemas de proteção contra descargas atmosféricas (SPDA), garantindo segurança patrimonial e conformidade com as normas técnicas.</p>
                     </div>
                     <img src="/assets/eletrica.png" alt="">
                 </article>
@@ -100,80 +103,61 @@
                 <article class="article_servicos invertido" id="cameras_dvr">
                     <div>
                         <h3>Montagem de Padrão CEMIG</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <p>Realizamos montagem e regularização de padrão de entrada de energia conforme as exigências da CEMIG, garantindo fornecimento de energia seguro e dentro das normas.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/padrao_cemig.jpg" alt="">
                 </article>
                 
         </section>
     
         <section class="section_servicos" id="seguranca_eletronica">
-                <h2 class="titulo_secao">Segurança Eletrônica</h2>
-                <p class="descricao_servico"><strong>Instalações e Manutenção de:</strong></p>
+
+                <div class="container_titulo">
+                    <h2 class="titulo_secao">Segurança Eletrônica</h2>
+                    <p class="descricao_servico"><strong>Instalações e Manutenção de:</strong></p>
+                </div>
             
             
             
                 <article class="article_servicos" id="cameras_dvr">
                     <div>
                         <h3>Câmeras/DVR</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quidem ullam odio a temporibus eligendi consectetur accusantium ipsa, facere veniam dolor totam obcaecati suscipit sed expedita aperiam sit. Omnis, repellat!</p>
+                        <p>Instalação e manutenção de sistemas de monitoramento por câmeras, proporcionando segurança para residências e comércios.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/camerasDVR.jpg" alt="">
                 </article>
 
                 <article class="article_servicos invertido">
                     <div>
                         <h3>Controle de Acesso</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto veniam quaerat commodi nesciunt, velit aliquam nihil voluptas non rerum expedita aut sit autem enim earum corporis itaque vel nam quae.</p>
+                        <p>Soluções para controle de acesso por biometria, cartões magnéticos e senhas, garantindo segurança e praticidade no gerenciamento de entradas e saídas.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/controle_cesso.jpg" alt="">
                 </article>
                 <article class="article_servicos">
                     <div>
-                        <h3>Interfones</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
+                        <h3>Interfones e Vídeo Porteiros</h3> <!--3 em um Interfonia para Condomínios tb-->
+                        <p>Melhore a comunicação e a segurança com interfones e vídeo porteiros modernos, ideais para residências e condomínios.
+                            Projetamos e executamos redes de cabeamento estruturado para comunicação eficiente e organizada de dados e telefonia.
+                        </p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/interfones.jpg" alt="">
                 </article>
 
                 <article class="article_servicos invertido">
                     <div>
-                        <h3>Vídeo Porteiros</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
-                    </div>
-                    <img src="/assets/eletrica.png" alt="">
-                </article>
-                
-                <article class="article_servicos">
-                    <div>
                         <h3>Fechaduras Eletrônicas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
+                        <p>Instalação de fechaduras digitais para maior segurança e comodidade, eliminando a necessidade de chaves físicas.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
-                </article>
-                
-                <article class="article_servicos invertido">
-                    <div>
-                        <h3>Interfonia para Condomínios</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
-                    </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/fechadura_eletronica.jpg" alt="">
                 </article>
                
-                <article class="article_servicos">
-                    <div>
-                        <h3>Cabeamento Estruturado</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
-                    </div>
-                    <img src="/assets/eletrica.png" alt="">
-                </article>
-                
-                <article class="article_servicos invertido">
+                <article class="article_servicos ">
                     <div>
                         <h3>Instalação e Configuração de PABX</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
+                        <p>Soluções completas em telefonia empresarial com instalação e configuração de PABX analógico, digital e IP.</p>
                     </div>
-                    <img src="/assets/eletrica.png" alt="">
+                    <img src="/assets/servicos/pabx.jpg" alt="">
                 </article>
             
         </section>
@@ -181,47 +165,53 @@
         <section class="section_servicos" id="automacao_redes">
             
     
-            <h2 class="titulo_secao">Automação e Redes</h2>
-            <p class="descricao_servico">Transforme sua casa em um lar inteligente com nossas soluções de automação e redes.</p>
-            
-            
-            <article class="article_servicos">
-                <div>
-                    <h3>Automação Residencial</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
-                </div>
-                <img src="/assets/eletrica.png" alt="">
-            </article>
+            <div class="container_titulo">
+                <h2 class="titulo_secao">Automação e Redes</h2>
+                <p class="descricao_servico">Transforme sua casa em um lar inteligente com nossas soluções de automação e redes.</p>
+                
+            </div>
             
             <article class="article_servicos invertido">
                 <div>
-                    <h3>Redes de Internet</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
+                    <h3>Automação Residencial</h3>
+                    <p>Transforme sua casa em um ambiente inteligente com sistemas de iluminação, temperatura e segurança automatizados.</p>
                 </div>
-                <img src="/assets/eletrica.png" alt="">
+                <img src="/assets/servicos/altomacao_residencial.jpg" alt="">
+            </article>
+            
+            <article class="article_servicos">
+                <div>
+                    <h3>Redes de Internet</h3>
+                    <p>Instalação e configuração de redes Wi-Fi e cabeadas para garantir conexão estável e de alta velocidade.</p>
+                </div>
+                <img src="/assets/servicos/redes_internet.jpg" alt="">
             </article>
             
         </section>
     
-        <section class="section_servicos" id="outros_servicos">
+        <section class="section_servicos invertido" id="outros_servicos">
                 
-            <h2 class="titulo_secao">Outros Serviços</h2>
-            <p class="descricao_servico">Além dos serviços mencionados, também oferecemos:</p>
-            
+            <div class="container_titulo">
+                <h2 class="titulo_secao">Outros Serviços</h2>
+                <p class="descricao_servico">Além dos serviços mencionados, também oferecemos:</p>
+                
+            </div>
+
             <article class="article_servicos">
                 <div>
                     <h3>Todos os Serviços de TV</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
+                    <p>Meio duvida do que colocar...</p>
                 </div>
                 <img src="/assets/eletrica.png" alt="">
             </article>
 
             <article class="article_servicos invertido">
                 <div>
-                    <h3>Instalação de Ar Condicionad</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad magni cum amet obcaecati, pariatur, ea praesentium eligendi earum nesciunt sapiente, itaque soluta quae sequi accusamus similique ipsa a. Velit!</p>
+                    <h3>Instalação de Ar Condicionado</h3>
+                    <p>Instalação de Ar-Condicionado
+                        Montagem e manutenção de sistemas de climatização para residências e empresas, garantindo conforto térmico.</p>
                 </div>
-                <img src="/assets/eletrica.png" alt="">
+                <img src="/assets/servicos/ar_condicionado.jpg" alt="">
             </article>
             
         </section>
