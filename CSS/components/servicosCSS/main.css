@@ -26,15 +26,19 @@ main.container_servicos .section_servicos
 main.container_servicos .container_titulo{
     margin: 2rem 0 2rem 0;
     width: 100%;
-    background-color: aquamarine;
-    padding: 2rem 0 2rem 0;
+    background-image: url(/assets/fundoTitulo.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 32px 0 2rem 0;
+    
 }
 main.container_servicos .container_titulo  h2.titulo_secao
 {
     position: relative; 
     text-align: left;
     margin-left: 2rem;
-    color: var(--color-title);
+    color: var(--white);
     padding-top: 5px; 
     
 }
@@ -43,6 +47,7 @@ main.container_servicos .container_titulo p.descricao_servico
 {
     margin-left: 2.5rem;
     font-weight: 600;
+    color: var(--color-subtile);
 }
 
 main.container_servicos .container_titulo  h2.titulo_secao::before {

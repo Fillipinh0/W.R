@@ -1,13 +1,23 @@
 
 /*------------------------------------------------------------------------*/
 main.main_index {
-    padding: 0 30px;
+    padding: 0px;
 }
 
-@media (max-width: 1650px) { 
+@media (max-width: 1649px) { 
     main.main_index {
-        width: 103%;
-        margin: -20px;
+        width: 100%;
+        
+
+    }
+}
+
+@media (max-width: 770px) { 
+    main.main_index {
+        
+    }
+    body{
+        width: 100%;
     }
 }
 
@@ -154,6 +164,18 @@ section.informacoes > .container_infomacoes_e_imagem{
     justify-content: space-evenly;
     justify-items: center;
 }
+@media screen and (max-width: 1000px) {
+    section.informacoes > .container_infomacoes_e_imagem{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.informacoes > .container_infomacoes_e_imagem .text_info a{
+        margin: auto;
+        border-radius: 0px;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
 .container_infomacoes_e_imagem > div.text_info {
     display: flex;
     flex-direction: column;
@@ -189,12 +211,18 @@ div.text_info > a.saiba_mais:hover {
 }
 
 .container_infomacoes_e_imagem .container_imagem_logo {
-    background-image: url(/assets/fundo_material_eletrica.svg);
+    background-image: url(/assets/fundo_da_logo_tele.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.247);
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .container_infomacoes_e_imagem  img.imagem_logo_ {
-    border: 1px solid black;
-    width: 30rem;
+    max-width: 30rem;
 }
 
 /*Section 3 onde fica os servicos*/
@@ -302,19 +330,19 @@ section.propaganda_dos_servicos  article  a {
 
 /*Escrementação das imagens no back ground*/
 section.propaganda_dos_servicos > article  a.instalacoes_eletricas {
-    background-image: url('/assets/eletrica.png');
+    background-image: url('/assets/carrossel/eletrica.png');
 }
 
 section.propaganda_dos_servicos > article  a.seguranca_eletronica {
-    background-image: url('/assets/seguranca_eletronica.png');
+    background-image: url('/assets/carrossel/seguranca_eletronica.png');
 }
 
 section.propaganda_dos_servicos > article  a.projetos_fotovoltaicos {
-    background-image: url('/assets/energia_fotovoltaica.png');
+    background-image: url('/assets/carrossel/energia_fotovoltaica.png');
 }
 
 section.propaganda_dos_servicos > article  a.automacao_residencial {
-    background-image: url('/assets/automasao_residencial.png');
+    background-image: url('/assets/carrossel/automasao_residencial.png');
 }
 
 section.propaganda_dos_servicos > article  a:hover{
