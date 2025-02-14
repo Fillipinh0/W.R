@@ -2,6 +2,7 @@
 @import './globals.css';
 
 @import 'components/partesGeraisCSS/header.css';
+@import 'components/partesGeraisCSS/footer.css';
 
 @import 'components/servicosCSS/main.css';
 @import 'components/indexCSS/main.css';

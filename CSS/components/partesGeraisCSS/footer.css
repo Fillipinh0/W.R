@@ -1,0 +1,115 @@
+footer {
+    background-color: var(--color-title);
+    color: white;
+}
+footer h3 {
+    position: relative; 
+    font-size: 1.5rem;
+    margin: 1.4rem 0;
+    padding-top: 10px; 
+}
+
+footer h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; 
+    height: 4px; 
+    background-color: var(--primary_color); 
+}
+.footer_contato {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.footer_contato .container_contato {
+    margin-left: 1rem;
+}
+.footer_contato .container_contato .informacoes_contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /*Ce voce estiver louco tentanto mudar algo ai lembre que no html tem style direto la por pura falta de vergonha na cara
+    */
+    
+}
+.footer_contato p, .footer_contato a, .footer_mapa iframe {
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+    display: block;
+
+}
+
+.footer_copyright {
+    background-color: var(--color-title);
+    color: white;
+    text-align: center;
+    padding: 1rem 20px;
+    margin-top: 3rem;
+    padding: 35px 0px;
+    filter: contrast(0.8);
+}
+.footer_copyright .fillipe {
+    margin-top: 0.5rem;
+}
+.footer_copyright .linkedin img {
+    width: 1.2rem;
+    
+}
+
+@media screen and (max-width: 750px) {
+    footer h3 {
+        margin: 1rem 0;
+    }
+    footer h3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px; 
+        height: 4px; 
+        background-color: var(--primary_color); 
+    }
+    .footer_contato {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_contato .container_contato, .footer_contato .footer_mapa {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer_contato .container_contato .informacoes_contato {
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding-left: 13rem; /* Adiciona padding à esquerda para alinhamento */
+    }
+
+    .footer_contato .container_contato .informacoes_contato p,
+    .footer_contato .container_contato .informacoes_contato a {
+        width: auto; /* Permite que os itens se ajustem ao conteúdo */
+        text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+    }
+
+    .footer_contato p, .footer_contato a, .footer_mapa iframe {
+        margin: 0.5rem 0;
+    }
+
+    .footer_copyright {
+        padding: 20px 10px;
+    }
+    footer h3::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px; 
+        height: 4px; 
+        background-color: var(--primary_color); 
+    }
+}

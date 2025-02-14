@@ -153,46 +153,57 @@ section.informacoes {
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    box-sizing: border-box;
 }
+
 section.informacoes > h2 {
     text-align: center;
     font-size: 3.3rem;
     padding: 50px 0;
 }
-section.informacoes > .container_infomacoes_e_imagem{
+
+section.informacoes > .container_infomacoes_e_imagem {
     display: flex;
     justify-content: space-evenly;
-    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
+
 @media screen and (max-width: 1000px) {
-    section.informacoes > .container_infomacoes_e_imagem{
+    section.informacoes > .container_infomacoes_e_imagem {
         flex-direction: column;
         align-items: center;
     }
-    section.informacoes > .container_infomacoes_e_imagem .text_info a{
+    section.informacoes > .container_infomacoes_e_imagem .text_info a {
         margin: auto;
         border-radius: 0px;
         margin-top: 30px;
         width: 100%;
     }
 }
+
 .container_infomacoes_e_imagem > div.text_info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50rem; 
+    width: 100%; 
+    max-width: 50rem; 
     padding: 20px;
-    
+    box-sizing: border-box; 
 }
+
 div.text_info > h3 {
     font-size: 2.3rem;
     margin-bottom: 20px;
     color: var(--color-title);
 }
+
 div.text_info > p {
     font-size: 1.2rem;
     line-height: 1.7;
 }
+
 div.text_info > a.saiba_mais {
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
     margin-top: 2rem;
@@ -205,6 +216,7 @@ div.text_info > a.saiba_mais {
     color: var(--white);
     transition: all 0.3s ease;
 }
+
 div.text_info > a.saiba_mais:hover {
     transform: scale(1.02);
     filter: opacity(0.8);
@@ -212,17 +224,21 @@ div.text_info > a.saiba_mais:hover {
 
 .container_infomacoes_e_imagem .container_imagem_logo {
     background-image: url(/assets/fundo_da_logo_tele.jpg);
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.247);
     display: flex;
     text-align: center;
     align-items: center;
+    width: 100%; 
+    max-width: 30rem; 
+    box-sizing: border-box; 
 }
 
-.container_infomacoes_e_imagem  img.imagem_logo_ {
-    max-width: 30rem;
+.container_infomacoes_e_imagem img.imagem_logo_ {
+    max-width: 100%; 
+    height: auto; 
 }
 
 /*Section 3 onde fica os servicos*/
