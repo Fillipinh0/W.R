@@ -1,18 +1,15 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
+
 main.container_servicos
 {
     margin-top: 120px;
-    background-color: white;
+    background-color: var(--white);
     padding: 20px 0px 0px 0px;
     font-size: 1.2rem;
     max-width: 1800px;
 }
 @media (max-width: 769px) {
     main.container_servicos {
-        margin-top: 0px;
+        margin-top: -50px;
     }
 }
 
@@ -22,11 +19,12 @@ h1.tituloPrincipal_sevicos
     text-align: center;
     margin-right: 100px;
 }
+/*
 main.container_servicos .section_servicos
 {
-    
+    tava me dando agonia o amarelo ent comentei
 }
-
+*/
 /*Titulo/conteudo principal das seçoes*/
 main.container_servicos .container_titulo{
     margin: 2rem 0 2rem 0;

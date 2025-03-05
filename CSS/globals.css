@@ -38,3 +38,19 @@ ul {
         width: 100%;
     }
 }
+
+.mudar {/* isso é pra nao tambar o ID selecionado quando for clicar em um link por conta do header com posição fixed ne */
+  scroll-margin-top: 270px; 
+}
+.mudar2 {/* isso é pra nao tambar o ID selecionado quando for clicar em um link por conta do header com posição fixed ne */
+  scroll-margin-top: 121px; 
+}
+@media (max-width: 768px) { /**/
+  .mudar {
+    scroll-margin-top: 60px; 
+  }
+  .mudar2 {
+    scroll-margin-top: 0px; 
+  }
+
+}
