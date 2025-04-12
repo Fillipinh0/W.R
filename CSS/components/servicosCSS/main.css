@@ -90,6 +90,8 @@ main.container_servicos .article_servicos> div {
 }
 main.container_servicos .article_servicos div > p {
     max-width: 600px;
+    margin-top: 10px;
+    margin-left: 5px;
     
 }
 @media (max-width: 1200px) {
