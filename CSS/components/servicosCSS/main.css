@@ -131,8 +131,7 @@ main.container_servicos .article_servicos div > p {
     }
 }
 main.container_servicos .article_servicos.invertido img {
-    margin-left: 20px; 
-    margin-right: 0; 
+    margin: auto;
 }
 .article_servicos > img {
     max-width: 600px;
