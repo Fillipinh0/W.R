@@ -83,11 +83,12 @@ footer h3::before {
     .footer_contato .container_contato, .footer_contato .footer_mapa {
         width: 100%;
         margin-left: 0;
+        padding: 20px;
     }
 
     .footer_contato .container_contato .informacoes_contato {
         align-items: flex-start; /* Alinha os itens à esquerda */
-        padding-left: 13rem; /* Adiciona padding à esquerda para alinhamento */
+        padding-left: 5vh; /* usei o vh pq medida em % e rem sao muito volateis e ta dando erro */
     }
 
     .footer_contato .container_contato .informacoes_contato p,
