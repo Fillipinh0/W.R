@@ -29,7 +29,7 @@ main.container_servicos .section_servicos
 main.container_servicos .container_titulo{
     margin: 2rem 0 2rem 0;
     width: 100%;
-    background-image: url(/assets/fundoTitulo.png);
+    background-image: url(../../../assets/fundoTitulo.png);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
