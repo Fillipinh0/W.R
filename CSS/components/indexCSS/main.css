@@ -346,19 +346,19 @@ section.propaganda_dos_servicos  article  a {
 
 /*Escrementação das imagens no back ground*/
 section.propaganda_dos_servicos > article  a.instalacoes_eletricas {
-    background-image: url('assets/carrossel/eletrica.png');
+    background-image: url('../assets/carrossel/eletrica.png');
 }
 
 section.propaganda_dos_servicos > article  a.seguranca_eletronica {
-    background-image: url('assets/carrossel/seguranca_eletronica.png');
+    background-image: url('../assets/carrossel/seguranca_eletronica.png');
 }
 
 section.propaganda_dos_servicos > article  a.projetos_fotovoltaicos {
-    background-image: url('assets/carrossel/energia_fotovoltaica.png');
+    background-image: url('../assets/carrossel/energia_fotovoltaica.png');
 }
 
 section.propaganda_dos_servicos > article  a.automacao_residencial {
-    background-image: url('assets/carrossel/automasao_residencial.png');
+    background-image: url('../assets/carrossel/automasao_residencial.png');
 }
 
 section.propaganda_dos_servicos > article  a:hover{
