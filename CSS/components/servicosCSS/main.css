@@ -80,11 +80,7 @@ main.container_servicos .article_servicos{
         flex-direction: column;
         margin: auto;
     }
-    main.container_servicos .article_servicos.invertido {
-        justify-items: center;
-        flex-direction: column;
-        margin: auto;
-    }
+    
 }
 
 main.container_servicos .article_servicos> div {
@@ -102,6 +98,7 @@ main.container_servicos .article_servicos div > p {
         width: 100%;
         text-align: center;
         margin: auto;
+        padding: 5px 20px 5px 20px;
     }
     main.container_servicos .article_servicos div > p {
         text-align: justify;
@@ -120,19 +117,6 @@ main.container_servicos .article_servicos div > p {
     }
 }
 
-
-@media (min-width: 1530px) {
-    main.container_servicos .article_servicos.invertido > div {
-        padding-left: 7rem;
-    }
-}
-
-@media (min-width: 1380px) and (max-width: 1529px) {
-    main.container_servicos .article_servicos.invertido > div {
-
-        padding-left: 3rem;
-    }
-}
 main.container_servicos .article_servicos.invertido img {
     margin: auto;
 }
