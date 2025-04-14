@@ -71,16 +71,19 @@ main.container_servicos .article_servicos{
     margin: 0 4rem 2rem 4rem;
     gap: 2rem;
     padding-bottom: 30px;
+
     
 }
 @media (max-width: 1200px) {
     main.container_servicos .article_servicos {
         justify-items: center;
         flex-direction: column;
+        margin: auto;
     }
     main.container_servicos .article_servicos.invertido {
         justify-items: center;
         flex-direction: column;
+        margin: auto;
     }
 }
 
@@ -136,6 +139,7 @@ main.container_servicos .article_servicos.invertido img {
 .article_servicos > img {
     max-width: 600px;
     box-shadow: 1px 1px 3.8px rgba(0, 0, 0, 0.308);
+    margin: auto;
 }
 @media (max-width: 1200px) {
     .article_servicos > img {
