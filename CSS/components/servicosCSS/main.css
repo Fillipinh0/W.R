@@ -107,22 +107,7 @@ main.container_servicos .article_servicos div > p {
 }
 @media (max-width: 1120px) {
     main.container_servicos .article_servicos div > p {
-        margin-left: 10;
-    }
-}
-@media (max-width: 1030px) {
-    main.container_servicos .article_servicos div > p {
-        margin-left: 15%;
-    }
-}
-@media (max-width: 890px) {
-    main.container_servicos .article_servicos div > p {
-        margin-left: 10%;
-    }
-}
-@media (max-width: 765px) {
-    main.container_servicos .article_servicos div > p {
-        margin-left: 22px;
+        margin: auto;
     }
 }
 
