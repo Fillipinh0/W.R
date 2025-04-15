@@ -103,6 +103,12 @@ section.inicio {
     margin-bottom: 10px;
     color: var(--white);
 }
+@media screen and (max-width: 514px) {
+    .text-inicio h1 {
+        font-size: 2.42rem;
+        
+    }
+}
 
 .text-inicio p {
     font-size: 1.1rem;
@@ -143,6 +149,15 @@ a.button_entre_em_contato:hover {
 
     }
 }
+@media screen and (max-width: 500px) {
+    .text-inicio > a.button_entre_em_contato {
+    width: 90%;
+    text-align: center;
+    padding: 12px 24px;
+
+
+    }
+}
 
 /*----------------------------------------------------*/
 
@@ -160,6 +175,11 @@ section.informacoes > h2 {
     text-align: center;
     font-size: 3.3rem;
     padding: 50px 0;
+}
+@media screen and (max-width: 1000px) {
+    section.informacoes > h2 {
+        font-size: 2.9rem;
+    }
 }
 
 section.informacoes > .container_infomacoes_e_imagem {
@@ -247,32 +267,43 @@ section.propaganda_dos_servicos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+    padding: 30px 20px 45px 20px;
     margin-bottom: 1rem;
 
 }
 @media screen and (max-width: 1000px) {
     section.propaganda_dos_servicos {
         flex-direction: column;
+        justify-content: none;
     }
 }
+.container_limitador {
+    margin: auto;
+    display: flex;
 
-section.propaganda_dos_servicos  h2{
-    font-size: 2.7rem;
-    text-align: left;
-    padding: 50px;
-    width: 530px;
 }
 @media screen and (max-width: 1000px) {
-    section.propaganda_dos_servicos  h2{
+    .container_limitador {
+        max-width: 100%;
+    }
+}
+section.propaganda_dos_servicos h2 {
+    font-size: 2.7rem;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 530px;
+}
+
+@media screen and (max-width: 1000px) {
+    section.propaganda_dos_servicos h2 {
         text-align: center;
-        
     }
 }
 @media screen and (max-width: 500px) {
-    section.propaganda_dos_servicos  h2{
+    section.propaganda_dos_servicos h2 {
         font-size: 2.1rem;
-        max-width: 500px;
     }
 }
 /*    Foi removido pois ja tinha muito botoes na pagina   
@@ -311,10 +342,8 @@ section.propaganda_dos_servicos  article {
 .swiper-wrapper
 {
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
     justify-items: center;
-
+    gap: 20px;
 }
 @media screen and (max-width: 1230px) {
     .swiper-wrapper {
