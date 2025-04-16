@@ -1,10 +1,10 @@
 @import './variables.css';
 @import './globals.css';
 
-@import 'components/partesGeraisCSS/header.css';
-@import 'components/partesGeraisCSS/footer.css';
+@import 'partesGeraisCSS/header.css';
+@import 'partesGeraisCSS/footer.css';
 
-@import 'components/servicosCSS/main.css';
-@import 'components/indexCSS/main.css';
+@import 'main_index.css';
+@import 'main_servicos.css';
 
 

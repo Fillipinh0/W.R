@@ -13,9 +13,6 @@ main.main_index {
 }
 
 @media (max-width: 770px) { 
-    main.main_index {
-        
-    }
     body{
         width: 100%;
     }
