@@ -29,7 +29,7 @@ main.container_servicos .section_servicos
 main.container_servicos .container_titulo{
     margin: 2rem 0 2rem 0;
     width: 100%;
-    background-image: url(../../../assets/fundoTitulo.png);
+    background-image: url(../assets/fundoTitulo.png);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -91,7 +91,6 @@ main.container_servicos .article_servicos div > p {
     max-width: 600px;
     margin-top: 10px;
     margin-left: 5px;
-    
 }
 @media (max-width: 1200px) {
     main.container_servicos .article_servicos> div {
@@ -101,8 +100,8 @@ main.container_servicos .article_servicos div > p {
         padding: 5px 20px 5px 20px;
     }
     main.container_servicos .article_servicos div > p {
-        text-align: justify;
-        margin-left: 20%;
+        text-align: center;
+        margin: auto;
     }
 }
 @media (max-width: 1120px) {
