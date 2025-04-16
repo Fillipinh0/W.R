@@ -259,6 +259,7 @@ div.text_info > a.saiba_mais:hover {
 .container_infomacoes_e_imagem img.imagem_logo_ {
     max-width: 100%; 
     height: auto; 
+    margin: auto;
 }
 
 /*Section 3 onde fica os servicos*/

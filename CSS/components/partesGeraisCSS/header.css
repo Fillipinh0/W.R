@@ -38,6 +38,9 @@ header  nav ul a {
     font-size: 1.6rem;
     color: var(--primary_color);
 }
+.container_a_header {
+    display: contents;
+}
 
 a.whatsapp {
     margin-top: 10px;
@@ -134,6 +137,7 @@ ul li:hover {
     }
     .navbar_desktop nav ul.menu_desktop a {
         font-size: 1.3rem;
+        width: 100%;
 
     }
     .navbar_desktop ul.menu_desktop  a:hover, .navbar_desktop ul.menu_desktop  a:active {
