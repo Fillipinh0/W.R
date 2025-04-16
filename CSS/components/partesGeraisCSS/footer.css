@@ -32,7 +32,7 @@ footer h3::before {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     flex-wrap: wrap;
 }
 .footer_contato .container_contato {
