@@ -241,7 +241,7 @@ div.text_info > a.saiba_mais:hover {
 }
 
 .container_infomacoes_e_imagem .container_imagem_logo {
-    background-image: url(../../../assets/fundo_da_logo_tele.jpg);
+    background-image: url(../assets/fundo_da_logo_tele.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
