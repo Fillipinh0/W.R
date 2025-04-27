@@ -31,13 +31,26 @@ section.inicio {
     margin-bottom: 0;
 }
  
- section.inicio > img.estampa_inicio {
+ section.inicio  img.estampa_inicio {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
     object-position: center; 
 
 }
+section.inicio  .estampa_inicio2 {
+    display: none;
+}
+@media (max-width: 850px) { 
+    
+    main section.inicio  img.estampa_inicio2 {
+        display: flex;
+    }
+    section.inicio  img.invisible {
+        display: none;
+    }
+}
+
 
 
 .container_conteudo_inicio {

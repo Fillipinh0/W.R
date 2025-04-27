@@ -6,6 +6,7 @@
     <title>W.R Soluções Elétricas</title>
     <meta name="description" content="W.R Telecom e Automação oferece serviços de instalações elétricas, segurança eletrônica, automação residencial e muito mais.">
     <meta name="keywords" content="instalações elétricas, segurança eletrônica, automação residencial, W.R Telecom, serviços de telecomunicações">
+    <link rel="preconnect" href="https://maps.googleapis.com">
     <!--Swiper link-->
     <link
         rel="stylesheet"
@@ -60,7 +61,8 @@
     <main class="main_index">
         <!-- ---------------------------- -->
         <section class="inicio">
-            <img src="assets/Estampa_Inicio_Teste_Eletrica.avif" alt="Estampa da empresa" class="estampa_inicio">
+            <img src="assets/FundoInicio.jpg" alt="Estampa da empresa" class="estampa_inicio invisible">
+            <img src="assets/FundoInicio2.jpg" alt="Estampa da empresa" class="estampa_inicio2 estampa_inicio">
             <div class="container_conteudo_inicio">
                 <div class="content">
                     
@@ -233,12 +235,20 @@
                 
         </footer>
     </main>
-
+    
+    <!-- Coloquei no CSS no Footer -->
+    <div id="cookie-banner">
+        Este site utiliza cookies de terceiros para melhorar a sua experiência. 
+        <button onclick="aceitarCookies()" >
+          Aceitar
+        </button>
+      </div>
     
 
     
 
     <script src="Js/butoes.js"></script>
+    <script src="Js/cookies.js"></script>
         <!--Swiper Js-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="Js/carro.js"></script>
