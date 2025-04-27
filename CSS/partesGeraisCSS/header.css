@@ -43,6 +43,7 @@ header  nav ul a {
 }
 
 a.whatsapp {
+    background-color: var(--whatsapp_color);
     margin-top: 10px;
     display: flex;
     justify-content: center;

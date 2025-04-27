@@ -9,6 +9,7 @@ footer h3 {
     padding-top: 10px; 
 }
 a.link_rede {
+    background-color: var(--color-title);
     color: var(--secondary_color);
     text-decoration: underline; 
     font-weight: bold; 
@@ -124,7 +125,7 @@ footer h3::before {
     }
     
 }
-/* Aviso de Cookies */
+/* Aviso de Cookies/ retirei pois nao solucionou o problema do ligthHouse
 #cookie-banner {
     background-color: red;
     position: fixed;
@@ -145,6 +146,6 @@ footer h3::before {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 
